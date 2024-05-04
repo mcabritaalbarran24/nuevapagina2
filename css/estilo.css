@@ -25,6 +25,7 @@ time, mark, audio, video {
 }
 
 .logo-container img {
+    animation: fadeIn 2s ease-out;
     height: auto; 
     width: 100px; 
 }
@@ -231,4 +232,17 @@ footer {
     white-space: nowrap; 
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
+.logo-container img {
+    transition: transform 0.3s ease;
+    width: 100px;
+    height: auto;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
